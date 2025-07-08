@@ -1,0 +1,124 @@
+  html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* prevent scrollbars */
+}
+  #body{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  }
+  .video{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  }
+
+
+
+#container{
+  margin-left: 10%;
+  margin-top: 8%;
+      position: relative;
+  z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+    width:80%;
+    /* width: 80vw; */
+    flex-direction: column;
+    /* margin-right: 150px;
+    margin-top:120px; */
+     color: whitesmoke;
+     gap:10px;
+
+}
+.item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid whitesmoke;
+    width:30%;
+    
+}
+#main1{
+box-shadow: inset 2px 2px 6px rgba(0,0,0,0.3);
+
+    /* margin-left: 70px; */
+    display: flex;
+    border-radius: 2px solid black;
+    /* background-color: aqua; */
+         background: rgba(255, 255, 255, 0.1); /* translucent white */
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    width: 80%;
+    height:20%;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+#main{
+box-shadow: inset 2px 2px 6px rgba(0,0,0,0.3);
+  
+         background: rgba(255, 255, 255, 0.1); /* translucent white */
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    width:80%;
+    height:60%;
+    display: flex;
+    border-radius: 7px;
+    overflow: hidden;
+   
+}
+#img{
+    /* background-color: cadetblue; */
+    width:70%;
+    overflow:hidden;
+
+}
+#weather{
+  overflow: hidden;
+  object-fit: cover;
+  background-size: cover;     
+   background-repeat: no-repeat; 
+  background-position: center; 
+  margin-top: 7%;
+ /* border: 2px solid slateblue; */
+ height: 60%;
+text-align: center;
+}
+#info {
+    margin-left: 8%;
+    margin-bottom:8%;
+    margin-top:1%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    gap:20%
+
+}
+#city{
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  width:80vh;
+  margin-left: 4%;
+  gap:10px;
+}
+/* #info h1{
+    text-align: center;
+} */
+#temp{
+    /* margin-right:10%; */
+    /* margin-left: 40%; */
+}
