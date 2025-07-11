@@ -43,7 +43,7 @@ export default function Navbar(){
     )
   },[city1])
   useEffect(()=>{
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city1}&limit=1&appid=183e89c3486599bba42be9d4829d7c4e`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city1}&limit=1&appid=183e89c3486599bba42be9d4829d7c4e`)
     .then(res=>res.json())
     .then(data=>{lat=data[0].lat
       lon=data[0].lon  
