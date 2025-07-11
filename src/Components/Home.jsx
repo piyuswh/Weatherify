@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Stylesheets/Home.css'
-import logo from '../Images/Weatherify.png'
+import logo from '../Images/weatherify.png'
 export default function Home(){
     return(
         <>
