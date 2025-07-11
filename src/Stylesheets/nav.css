@@ -1,7 +1,8 @@
-*{
-    /* color:wh; */
-    margin: 0px;
+* {
+  margin: 0px;
 }
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   #nav {
     flex-direction: column;
@@ -25,100 +26,45 @@
   }
 }
 
-
-#form{
-    width:100%;
-    ;
-
+#form {
+  width: 100%;
 }
-#form input{
-    height:36px;
-    width:70%;
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
-    font-size:large;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-  
 
-
-
+#form input {
+  height: 36px;
+  width: 70%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: large;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
-#detail{
+
+#detail {
   display: flex;
   margin-right: 120px;
 }
-#form button{
-    height:40px;
-    width:100px;
-    color: white;
 
-    /* border-radius: 9px; */
-    border-top-right-radius:10px ;
-    border-bottom-right-radius:10px ;
- 
-    border-left: none;
-    font-family: sans-serif;
-    background-color:black;
-    opacity: 80%;
-    font-size: large;
-    /* border: 2px solid white; */
-    /* border: none; */
-    
-}
-#nav {
-  display: flex;
-  flex-wrap: wrap;
-  min-width:93px;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 0 20px;
-  opacity:100%;
-  background-color:red;
-
-    margin: 0;
-/* background: rgba(80, 80, 80, 0.3);
-backdrop-filter: blur(10px); */
-color: white;
-    font-family: 'Segoe UI', sans-serif;
-border: 2px;
-
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  
-
-  color:white
-}
-#logo1{
-  overflow: hidden;
-  width:100%;
-}
-#temp{
-    margin-right:50px;
-}
-#form button:hover{
-    background-color:black;
-    opacity:60%;
-
-}
-/* Common navbar styles */
-/* #nav {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#form button {
+  height: 40px;
+  width: 100px;
   color: white;
-  transition: background 0.5s ease;
-} */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+  font-family: sans-serif;
+  background-color: black;
+  opacity: 80%;
+  font-size: large;
+}
 
-/* Weather-based backgrounds */
-.navbar {
-  transition: background 0.5s ease-in-out;
+#form button:hover {
+  background-color: black;
+  opacity: 60%;
 }
-#nav {
-  background: rgba(80, 80, 80, 0.3); /* <== this always overrides .navbar */
-}
+
+/* Final Navbar Styling */
 #nav {
   display: flex;
   flex-wrap: wrap;
@@ -127,13 +73,47 @@ border: 2px;
   height: 60px;
   padding: 0 20px;
   margin: 0;
-
-  /* REMOVE this ↓ */
-  /* background: rgba(80, 80, 80, 0.3); */
-
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', sans-serif;
   color: white;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease-in-out;
+}#logo1 {
+  overflow: hidden;
+  width: 100%;
 }
 
+#temp {
+  margin-right: 50px;
+}
+.clear {
+  background-color: #4facfe; /* Sky blue */
+}
+
+.cloudy {
+  background-color: #a0a0a0; /* Gray */
+}
+
+.rainy {
+  background-color: #3a6073; /* Deep blue-gray */
+}
+
+.snowy {
+  background-color: #e0f7fa; /* Light icy blue */
+  color: black; /* Better contrast */
+}
+
+.stormy {
+  background-color: #2c3e50; /* Dark stormy blue */
+}
+
+.foggy {
+  background-color: #b0bec5; /* Muted gray-blue */
+}
+
+.default {
+  background-color: #0b0c2a; /* 🌌 Night sky feel */
+}
+#logo{
+  width:60px;
+  height:60px;
+}

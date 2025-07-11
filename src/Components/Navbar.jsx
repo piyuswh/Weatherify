@@ -6,7 +6,7 @@ import logo from '../Images/weatherify.png'
 
 
 export default function Navbar(){
-  function getWeatherClass() {
+ function getWeatherClass() {
   if (!weather.weather) return "default";  // fallback
 
   const condition = weather.weather[0].main.toLowerCase();
@@ -29,6 +29,7 @@ export default function Navbar(){
       return "default";
   }
 }
+
 
       const[weather,setWeather]=useState({})
       const[week,setWeek]=useState({})
@@ -63,9 +64,10 @@ setCity("")
   }
 return(
     <>
-<div id="nav">
+<div id="nav" className={getWeatherClass()}>
       
 
+        <img id="logo" src={logo}></img>
         <h1>Weatherify</h1>
         {/* <h1>Welcome To Weatherify</h1> */}
         <div >
